@@ -2,16 +2,23 @@ import React, { Component } from 'react'
 
 
 class Game extends Component {
-  state = {};
+  state = {
+    value1: Math.floor(Math.random() * 100),
+    value2: Math.floor(Math.random() * 100),
+    value3: Math.floor(Math.random() * 100),
+    proposedAnswer = Math.floor(Math.random() * 3) + value1 + value2 + value3,
+	numQuestions: 0,
+  	numCorrect: 0
+  };
   
 
   render(){
-    const value1 = Math.floor(Math.random() * 100);
-  	const value2 = Math.floor(Math.random() * 100);
-  	const value3 = Math.floor(Math.random() * 100);
-  	const proposedAnswer = Math.floor(Math.random() * 3) + value1 + value2 + value3;
-  	const numQuestions = 0;
-  	const numCorrect = 0;
+    //const value1 = Math.floor(Math.random() * 100);
+  	//const value2 = Math.floor(Math.random() * 100);
+  	//const value3 = Math.floor(Math.random() * 100);
+  	//const proposedAnswer = Math.floor(Math.random() * 3) + value1 + value2 + value3;
+  	//const numQuestions = 0;
+  	//const numCorrect = 0;
     
     return(
       <div className="game">
